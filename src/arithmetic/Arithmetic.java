@@ -13,6 +13,7 @@ import static java.time.Clock.system;
  * arithmetic operations based on user input
  * execute the code check the output
  * @author sivagamasrinivasan
+ * @modifier Madison Scarlett 991840867
  * 
  */
 public class Arithmetic 
@@ -25,11 +26,13 @@ public class Arithmetic
     {
        
         ArithmeticBase r= new ArithmeticBase();
-        Scanner in= new Scanner(System.in);
-        int n= in.nextInt();
-        int m= in.nextInt();
-        double result = r.calculate(m,n);
-        System.out.println("result :" +result); 
+        double x = 100;
+        double y = 25;
+       
+        System.out.println("PLUS: " + r.calculate(x, y, ArithmeticBase.Operation.PLUS));
+        System.out.println("MINUS: " + r.calculate(x, y, ArithmeticBase.Operation.MINUS));
+        System.out.println("TIMES: " + r.calculate(x, y, ArithmeticBase.Operation.TIMES));
+        System.out.println("DIVIDE: " + r.calculate(x, y, ArithmeticBase.Operation.DIVIDE));
     
     }
 }
